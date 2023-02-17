@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="estilos/estiloMolinon.css">
+</head>
+<body>
+  <header>
+    <h1 id="portada">El Molinón - Enrique Castro 'Quini' | Sporting - Web</h1>
+  </header>
+  <nav>
+    <h1>ÍNDICE</h1>
+    <ul style="list-style-type:square">
+      <li><a href="#sectoress">Sectores del estadio</a></li>
+      <li><a href="#internacionales">Partidos internacionales</a></li>
+      <li><a href="#conciertos">Conciertos</a></li>
+    </ul>
+    <form id="busqueda">
+      <input type="search" name="q" placeholder="Buscar">
+      <input type="submit" value="Ir">
+    </form>
+    <h2>ENLACE PÁGINA WEB GIJON</h2>
+    <a href="gijon.html" title="Link para dirigirte a la página web de Gijon">
+      <img id="mi_foto2" src="./imagenes/pegescudogijon.jpg" alt="Enlace con imagen a la página web de Gijon"/>
+    </a>
+    <h1 id="entradas">COMPRA AQUI TUS ENTRADAS</h1>
+    <form action="/action_page.php" novalidate>
+      <fieldset>
+      <legend>Datos del cliente</legend>
+      <div>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" value="Nombre"><br>
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" value="Apellidos"><br><br>
+        <label for="email">Correo electronico:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="quantity">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="0" max="150" step="1" value="30"><br>
+        <label for="myfile">Inserte una foto de su dni para verificarla:</label><br>
+        <input type="file" id="myfile" name="dnifoto"><br><br>
+      </div>
+      </fieldset>
+    </form>
+    <form action="/action_page.php" novalidate>
+      <fieldset>
+      <legend>Tipo de entrada</legend>
+      <label for="sector">Elige el sector:</label><br>
+      <select id="sector" name="sector" size="3"><br>
+        <option value="Grada norte">Grada norte</option>
+        <option value="Esquina norte">Esquina norte</option>
+        <option value="Tribuna norte">Tribuna norte</option>
+        <option value="Esquina sur">Esquina sur</option>
+        <option value="Grada este">Grada este</option>
+        <option value="Tribuna este">Tribuna este</option>
+        <option value="Tribuna oeste">Tribuna oeste</option>
+        <option value="Esquina sur">Tribuna oeste alta</option>
+        <option value="Esquina sur">Esquina sur</option>
+      </select><br><br>
+    <p>Elige la calidad de tu entrada:</p>
+    <input type="radio" id="estandar" name="entrada" value="estandar">
+    <label for="estandar">Entrada estandar</label><br>
+    <input type="radio" id="VIP" name="entrada" value="VIP">
+    <label for="VIP">Entrada VIP</label><br>
+    <input type="radio" id="VIP especial" name="entrada" value="VIP especial">
+    <label for="VIP especial">Entrada VIP especial</label><br>
+    <button type="button" onclick="alert('Enviado, pronto tendra sus entradas')">Enviar</button>
+    </fieldset>
+  </form>
+  <form action="/action_page.php" novalidate>
+    <fieldset>
+    <legend>SOCIOS DEL CLUB ROJIBLANCO</legend>
+    <div>
+      <label for="nombresocio">Nombre:</label><br>
+      <input type="text" id="nombresocio" name="nombresocio" value="Nombre"><br>
+      <label for="apellidosocio">Apellidos:</label><br>
+      <input type="text" id="apellidosocio" name="apellidosocio" value="Apellidos"><br>
+      <label for="emailsocio">Correo electronico:</label><br>
+      <input type="email" id="emailsocio" name="emailsocio"><br>
+      <label for="socio">Numero de socio:</label><br>
+      <input type="tel" id="socio" name="socio" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+      <label for="birthday">Introduce tu fecha de nacimiento:</label><br>
+      <input type="date" id="birthday" name="birthday"><br>
+      <label for="myfile">Inserte una foto de su carnet de socio:</label><br>
+      <input type="file" id="dnifoto" name="dnifoto"><br><br>
+      <label for="sector">Elige el sector:</label><br>
+      <select id="sectores" name="sector" size="3"><br>
+        <option value="Grada norte">Grada norte</option>
+        <option value="Esquina norte">Esquina norte</option>
+        <option value="Tribuna norte">Tribuna norte</option>
+        <option value="Esquina sur">Esquina sur</option>
+        <option value="Grada este">Grada este</option>
+        <option value="Tribuna este">Tribuna este</option>
+        <option value="Tribuna oeste">Tribuna oeste</option>
+        <option value="Esquina sur">Tribuna oeste alta</option>
+        <option value="Esquina sur">Esquina sur</option>
+      </select><br><br>
+      <button type="button" onclick="alert('Enviado, pronto tendra sus entradas! Nos vemos en el campo:D')">Enviar</button>
+    </div>
+  </fieldset>
+</form>
+</nav>
+  <section>
+    <div id="imagen">
+      <img id="mi_foto" alt="Foto del campo del Molinón" src="./imagenes/imagen1.jfif">
+    </div>
+    <div id="texto">
+      <h2 id="solera">La solera de un campo centenario</h2>
+      <p><b>La historia de El Molinón es la propia de Gijón y la de su club anfitrión</b>, el Real Sporting, que lo ha convertido en feudo de su ya largo y centenario rodar.
+        Cuando vive ya su primer siglo de existencia mira al futuro dispuesto a afrontar su última remodelación, que promete un cambio espectacular.
+        Como si de un hermano mayor se tratara, El Molinón vio extenderse y crecer junto a él el Parque de Isabel la Católica, el de los Hermanos Castro, la Feria Internacional de Muestras, el Palacio de Deportes, el Museo etnográfico del Pueblo de Asturias... y hasta la reconducción del mismísimo río Piles.<br>
+        Estratégicamente comunicado, <b>se levanta en la más privilegiada zona de Gijón</b> para entremezclar como ningún otro campo de fútbol de España una ubicación urbana en medio de un contexto idílico de exuberante naturaleza.
+        Estamos ante un vergel futbolístico. Incluso su denominación ha sobrevivido hasta nuestros días como otro guiño más a la epopeya gijonesa.
+        Su nombre le fue dado por su cercanía a un soberbio y viejo molino sobre el que ahora se asienta el Parador Nacional.<br>
+        <b>La primera referencia de un partido en El Molinón nos sitúa en el 20 de mayo de 1908</b>. Lo extraemos de las páginas del diario El Comercio: "El último domingo, en el campo de El Molinón jugaron un match de foot ball los equipos de las sociedades sportivas La Bella Sportiva y El Balón, saliendo vencedora la primera por un soberbio gol admirablemente hecho por el joven Samuel Díaz".
+        Se cumple un siglo de esta breve crónica que confiera al campo gijonés el título de el más antiguo del fútbol profesional español.<br>
+        A buen seguro que ya desde antes era escenario de más partidos, como lo evidencia que en este primer referente periodístico del que partimos no se hace necesario explicar dónde se asentaba, pero a falta de otra documentación que permita aseverar con rigor, para la historia del fútbol española queda este mes de mayo de 1908.<br>
+        <b>La primera puesta de largo de El Molinón fue en 1911</b>, cuando albergó el denominado <b>Campeonato del Norte de España</b>. En 1917 llegó su primera gran remodelación, que llegó a ser considerada com la de su inauguración oficial. Se levantó una nueva empalizada de madera, se construyó una gran tribuna y se dispuso una puerta principal.
+        Eran momentos de expansión para la ciudad, para el Sporting y por ende, para El Molinón, convertido ya en uno de los mejores campos de fútbol del país.<br>
+        Un magnífico escenario para un gran partido, el más relevante de cuantos podían disputarse en la <b>España de 1920: la final de Copa</b>.
+        Aquel partido enfrentó al Barcelona de Zamora y Samitier con el Athletic de Pichichi.
+        Por faltar, no faltó ni la polémica arbitral.<br>
+        El Molinón, recinto por excelencia de la Asturias balompédica a lo largo de su historia, tuvo también otros muchos usos diversos alternativos. <b>Cien años dan para mucho</b>: desde cementerio de coches, pasando por pista de aterrizaje para helicópteros, mítines políticos, recinto ferial o guardería para galgos conforman un muy largo y dispar etcétera. Aunque de su versatilidad quizás lo más relevante ha sido su carácter de gran escenario para todo tipo de actuaciones musicales. Especialmente destacados han sido los conciertos multitudinarios de las últimas décadas con actuaciones de estrellas como Tina Turner, Bon Jovi, Dire Straits, Rolling Stone, Bruce Springsteen o Paul McCartney, entre otros.<br>
+        Desde el 27 de febrero de 2018, la nominación del campo pasó a ser la de <b>El Molinón - Enrique Castro Quini</b> por “decisión unánime” de los distintos partidos al frente del Ayuntamiento de Gijón.
+      </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1446.1792536336795!2d-5.637587300192885!3d43.53656823816493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367c68a522f2e3%3A0x3632b8cb7063b686!2sEstadio%20El%20Molin%C3%B3n%20%E2%80%A2%20Enrique%20Castro%20%22Quini%22!5e0!3m2!1ses!2ses!4v1676286861728!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <h1 id="sectoress">Sectores Del Estadio</h1>
+    <p>El Molinón tiene 29 035 asientos —sin contar los palcos vip, presidencial y de prensa, ni la zona de minusválidos— repartidos en diez graderíos principales, que a su vez están divididos en sectores:
+    <ol>
+      <li>Tribuna oeste alta</li>
+      <li>Tribuna oeste</li>
+      <li>Tribuna este</li>
+      <li>Grada este</li>
+      <li>Tribuna norte</li>
+      <li>Grada norte</li>
+      <li>Tribuna sur</li>
+      <li>Grada sur (donde se ubica la grada de animación "Grada 1908" para menores de 26 años)</li>
+      <li>Esquina norte</li>
+      <li>Esquina sur</li>
+    </ol>
+    </p>
+    <h1 id="internacionales">Partidos internacionales</h1>
+    <h3>Seleccion española</h3>
+    <p>La selección española ha disputado once partidos en El Molinón, lo que convierte a Gijón en la quinta ciudad del país que más encuentros del combinado nacional ha albergado, con siete partidos amistosos y cuatro de competición oficial: tres clasificatorios para una Copa del Mundo y uno para una Eurocopa.</p>
+    <table id="tabla" border="1">
+      <tr>
+        <th>Amistoso; 22 de abril de 1928</th>
+        <td>España</td>
+        <td>1:1 (1:0)</td>
+        <td>Italia</td>
+      </tr>
+      <tr>
+        <th>Amistoso; 29 de marzo de 1978</th>
+        <td>España</td>
+        <td>3:0 (2:0)</td>
+        <td>Noruega</td>
+      </tr>
+      <tr>
+        <th>Amistoso; 16 de abril de 1980</th>
+        <td>España</td>
+        <td>2:2 (0:1)</td>
+        <td>Checoslovaquia</td>
+      </tr>
+      <tr>
+        <th>Amistoso; 24 de septiembre de 1986</th>
+        <td>España</td>
+        <td>3:1 (2:0)</td>
+        <td>Grecia</td>
+      </tr>
+      <tr>
+        <th>Amistoso; 12 de septiembre de 1990</th>
+        <td>España</td>
+        <td>3:0 (1:0)</td>
+        <td>Brasil</td>
+      </tr>
+      <tr>
+        <th>Clasif. Copa Mundial de 1998; 11 de octubre de 1997</th>
+        <td>España</td>
+        <td>3:1 (2:1)</td>
+        <td>Islas Feroe</td>
+      </tr>
+      <tr>
+        <th>Amistoso; 31 de marzo de 2004</th>
+        <td>España</td>
+        <td>2:0 (1:0)</td>
+        <td>Dinamarca</td>
+      </tr>
+      <tr>
+        <th>Amistoso; 17 de agosto de 2005</th>
+        <td>España</td>
+        <td>2:0 (2:0)</td>
+        <td>Uruguay</td>
+      </tr>
+      <tr>
+        <th>Clasif. Copa Mundial de 2014; 22 de marzo de 2013</th>
+        <td>España</td>
+        <td>1:1 (0:0)</td>
+        <td>Finlandia</td>
+      </tr>
+      <tr>
+        <th>Clasif. Copa Mundial de 2018; 24 de marzo de 2017</th>
+        <td>España</td>
+        <td>4:1 (2:0)</td>
+        <td>Israel</td>
+      </tr>
+      <tr>
+        <th>Clasif. Eurocopa 2020; 8 de septiembre de 2019</th>
+        <td>España</td>
+        <td>4:0 (1:0)</td>
+        <td>Islas Feroe</td>
+      </tr>
+    </table>
+    <h3>Copa Mundial de 1982</h3>
+    <p>Gijón fue una de las catorce subsedes y El Molinón uno de los diecisiete estadios que albergaron la Copa Mundial de 1982. Con motivo del evento, se elevaron con tribunas superpuestas las gradas este y sur, que situaron el aforo en torno a 45 000 espectadores. En este recinto se disputaron tres partidos del grupo 2 durante la primera fase del campeonato.</p>
+    <table id="tabla1" border="1">
+      <tr>
+        <th>Copa Mundial de Fútbol de 1982; 16 de junio de 1982</th>
+        <td>Alemania Federal</td>
+        <td>1:2 (0:0)</td>
+        <td>Argelia</td>
+      </tr>
+      <tr>
+        <th>Copa Mundial de Fútbol de 1982; 20 de junio de 1982</th>
+        <td>Alemania Federal</td>
+        <td>4:1 (1:0)</td>
+        <td>Chile</td>
+      </tr>
+      <tr>
+        <th>Copa Mundial de Fútbol de 1982; 25 de junio de 1982 </th>
+        <td>Alemania Federal</td>
+        <td>1:0 (1:0)</td>
+        <td>Austria</td>
+      </tr>
+    </table><br>
+    <h2 id="conciertos">Conciertos</h2>
+    <ul style="list-style-type:square;">
+      <li>Tina Turner (1990)</li>
+      <li>Sting (1991)</li>
+      <li>Dire Straits (1992)</li>
+      <li>Bruce Springsteen (1993, 2003, 2013)</li>
+      <li>The Rolling Stones (1995)</li>
+      <li>Bon Jovi (1996)</li>
+      <li>Paul McCartney (2004)</li>
+      <li>Artistas nacionales como: Vetusta Morla, IZAL, Love of Lesbian, Alejandro Sanz, Víctor Manuel, Miguel Ríos o Joan Manuel Serrat.</li>
+    </ul>
+    <h1><a id="paginicial" href="#portada">Ir al principio de la página</a></h1>
+  </section>
+  <footer>
+    <address>El autor de esta página ha sido Pelayo Rodríguez Álvarez</address>
+    <address>La última modificación tuvo lugar el 17/02/2023</address>
+  </footer>
+</body>
+</html>
