@@ -99,3 +99,13 @@ width: 100%;
 img#mi_foto2{
 width: 80%;
 }
+.inicio{
+position: sticky;
+bottom: 20px;
+margin-left: 28%;
+margin-top: 1000px;
+padding: 15px;
+color: #fff;
+background: red;
+border-radius: 94px;
+    }

@@ -25,7 +25,7 @@ font-size: large;
 top: 13%;
 left: 2%;
 width: 22%;
-height: 2679px;
+height: 5649px;
 background-repeat: no-repeat;
 background-size: cover;
 background-image: url(../imagenes/playasanlorenzo.jpg);
@@ -45,7 +45,9 @@ padding-right:13px;
 }
 footer {
 position: absolute;
-top: 2755px;
+font-weight: bold;
+text-align: center;
+top: 5725px;
 left: 25%;
 width: 1384px;
 height:50px;
@@ -84,11 +86,17 @@ background-image: url(../imagenes/fotogijon1.jpg);
 background-color: bisque;
 }
 #section4{
-
+background-repeat: no-repeat;
+background-size: cover;
+background: linear-gradient(to bottom right,green,white)
 }
-footer{
-font-weight: bold;
-text-align: center;
+#section5{
+font-family: 'Times New Roman', Times, serif;
+background: linear-gradient(to bottom left,rgb(202, 100, 197),rgb(4, 152, 252))
+}
+#section6{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+background: linear-gradient(to bottom left,rgb(184, 59, 128),rgb(5, 213, 228))
 }
 img#mi_foto{
 width: 100%;
@@ -227,4 +235,40 @@ border-bottom: 2px;
 border-left: 2px;
 border-top: 2px;
 border-right: 2px;
+}
+.autoviascolor{
+background: blue; 
+color: white;
+text-align: center;
+}
+#tablatransporte{
+background-color: #C8DCFF;
+border-collapse: collapse;
+}
+.otrascarreterascolor1{
+background: red; 
+color: white;
+text-align: center;
+}
+.otrascarreterascolor2{
+background: orangered; 
+color: white;
+text-align: center;
+}
+.otrascarreterascolor3{
+background: yellow; 
+text-align: center;
+}
+#bicisfoto{
+width:31%;
+}
+.inicio{
+position: sticky;
+bottom: 20px;
+margin-left: 42%;
+margin-top: 1000px;
+padding: 15px;
+color: #fff;
+background: blue;
+border-radius: 94px;
 }
